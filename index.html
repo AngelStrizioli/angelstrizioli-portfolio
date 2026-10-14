@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Angel E. Strizioli — Senior Full-Stack &amp; Applied AI Engineer</title>
+<meta name="description" content="8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I work AI-first: Claude Code and GitHub Copilot are part of my daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.">
+<meta name="theme-color" content="#0e1116">
+<link rel="canonical" href="https://angelstrizioli-portfolio.vercel.app/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Angel E. Strizioli — Senior Full-Stack &amp; Applied AI Engineer">
+<meta property="og:description" content="8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I work AI-first: Claude Code and GitHub Copilot are part of my daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.">
+<meta property="og:url" content="https://angelstrizioli-portfolio.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e1116'/%3E%3Ctext x='16' y='22' font-size='17' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2339ff9c'%3EAS%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Angel E. Strizioli","jobTitle":"Senior Full-Stack & Applied AI Engineer","description":"8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I work AI-first: Claude Code and GitHub Copilot are part of my daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.","url":"https://angelstrizioli-portfolio.vercel.app","email":"mailto:astrizioli@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"},"sameAs":["https://www.linkedin.com/in/angelstrizioli","https://github.com/AngelStrizioli"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad de San Andrés (UDESA)"},{"@type":"CollegeOrUniversity","name":"UADE"}],"worksFor":[{"@type":"Organization","name":"Frávega"},{"@type":"Organization","name":"Diamond Kinetics"}],"knowsAbout":["Claude Code","GitHub Copilot","AI-assisted refactoring","Automated testing","Machine learning (UDESA)","React","React Native","Next.js","TypeScript","Redux","Tailwind CSS","Flutter","Vue.js","Angular","Go","Node.js","Python","REST / BFF","Event-driven","AWS","Firebase","SQL","MongoDB","GitLab CI","Argo CD","Datadog","Team leadership","Mentoring","Agile","Architecture","Stakeholder communication"],"knowsLanguage":["es","en","it","pt","de"]}</script>
+<style>:root{--bg:#0e1116;--panel:#161b22;--line:#252c36;--text:#e6edf3;--muted:#8b97a5;--accent:#39ff9c;--accent-d:#1c8f5a;--r:14px;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:0 max(16px,env(safe-area-inset-left)) 48px}
+a{color:var(--accent)}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--accent);color:#000;padding:8px 12px;border-radius:8px;z-index:20}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.hud{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:12px;margin:0 -16px;padding:10px 16px;background:rgba(14,17,22,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px}
+.hud-name{color:var(--accent);font-weight:700}
+.bar{flex:1;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent-d),var(--accent));transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.hud-count{color:var(--muted);white-space:nowrap}.hud-count b{color:var(--text)}
+.hero,main,footer{max-width:720px;margin:0 auto}
+.hero{padding:40px 0 8px;animation:rise .6s both}
+.eyebrow{font-family:var(--mono);color:var(--accent);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+.eyebrow:after{content:"_";animation:blink 1s steps(2) infinite}
+h1{font-size:clamp(2rem,9vw,3.2rem);line-height:1.05;margin:0 0 6px}
+.title{font-size:1.15rem;color:var(--accent);margin:0 0 14px;font-weight:600}
+.summary{color:var(--muted);margin:0 0 20px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);text-decoration:none;font-weight:600;font-size:15px;transition:transform .15s,border-color .15s,background .15s}
+.btn:hover{border-color:var(--accent);transform:translateY(-2px)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#04120b}
+.hint{font-size:13px;color:var(--muted);font-family:var(--mono)}
+.sec{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:44px 0 16px}
+.map{list-style:none;margin:0;padding:0;position:relative}
+.map:before{content:"";position:absolute;left:27px;top:20px;bottom:20px;width:3px;background:repeating-linear-gradient(to bottom,var(--line) 0 8px,transparent 8px 14px)}
+.level{position:relative;margin:0 0 14px;transition:opacity .5s,transform .5s}
+.js .level{opacity:0;transform:translateY(18px)}
+.js .level.in{opacity:1;transform:none}
+details{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);transition:border-color .2s}
+details[open],details:hover{border-color:var(--accent-d)}
+summary{display:flex;align-items:center;gap:14px;padding:12px 14px;cursor:pointer;list-style:none;min-height:72px;-webkit-tap-highlight-color:transparent}
+summary::-webkit-details-marker{display:none}
+.coin{position:relative;flex:none;width:56px;height:56px;border-radius:50%;background:#fff;display:grid;place-items:center;border:3px solid var(--line);transition:border-color .3s,transform .3s}
+.coin-img{width:40px;height:40px;object-fit:contain;border-radius:8px}
+.coin-mono{font:700 15px var(--mono);color:#0e1116}
+.star{position:absolute;right:-6px;top:-6px;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#04120b;display:grid;place-items:center;font-size:12px;transform:scale(0);transition:transform .35s cubic-bezier(.3,1.8,.5,1)}
+.level.cleared .star{transform:scale(1)}
+.level.cleared .coin,.level.current .coin{border-color:var(--accent)}
+summary:hover .coin{transform:scale(1.06)}
+.head{display:flex;flex-direction:column;min-width:0;flex:1}
+.lvl{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.company{font-weight:700;font-size:1.05rem}
+.role{font-size:14px;color:var(--text)}
+.period{font-size:12px;color:var(--muted)}
+.chev{flex:none;width:10px;height:10px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .3s}
+details[open] .chev{transform:rotate(-135deg)}
+.body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+details[open] .body{grid-template-rows:1fr}
+.inner{overflow:hidden;padding:0 16px}
+details[open] .inner{padding:4px 16px 16px}
+.points{margin:8px 0 12px;padding-left:18px;color:#c4cdd6}
+.points li{margin:6px 0}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.chips li{font:12px var(--mono);padding:4px 10px;border-radius:99px;border:1px solid var(--line);background:#0e1116;color:var(--muted)}
+.skills{display:grid;gap:18px}
+.skill-group h3{margin:0 0 8px;font-size:1rem}
+.edu{padding-left:18px;color:#c4cdd6}.langs{color:var(--muted);font-size:14px}
+footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+@keyframes blink{50%{opacity:0}}
+@media (min-width:760px){body{font-size:17px}.hero{padding-top:72px}.skills{grid-template-columns:1fr 1fr}.map:before{left:31px}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.js .level{opacity:1;transform:none}html{scroll-behavior:auto}}
+/* plain CV page */
+body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;padding:24px 0}.cv-page a{color:#0a5}.cv-page h2{border-bottom:1px solid #ccc;padding-bottom:4px;margin-top:28px}.cv-page .title{color:#333}.job{margin:14px 0}.job h3{margin:0}.job .period,.tech{color:#555;font-size:14px;margin:2px 0}
+@media print{.cv-page>p:first-child{display:none}.job{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#cv-link">Skip the game</a>
+<div class="hud" role="status" aria-live="polite">
+  <span class="hud-name">AS</span>
+  <div class="bar" aria-hidden="true"><i id="xp"></i></div>
+  <span class="hud-count"><b id="cleared">0</b>/9 cleared</span>
+</div>
+<header class="hero">
+  <p class="eyebrow">Press start</p>
+  <h1>Angel E. Strizioli</h1>
+  <p class="title">Senior Full-Stack &amp; Applied AI Engineer</p>
+  <p class="summary">8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I work AI-first: Claude Code and GitHub Copilot are part of my daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.</p>
+  <nav class="cta" aria-label="Contact">
+  <a class="btn primary" href="mailto:astrizioli@gmail.com">astrizioli@gmail.com</a>
+  <a class="btn" href="https://www.linkedin.com/in/angelstrizioli" rel="me noopener">LinkedIn</a>
+  <a class="btn" href="https://github.com/AngelStrizioli" rel="me noopener">GitHub</a>
+  <a class="btn" href="assets/Angel_Strizioli_CV.pdf">Download CV (PDF)</a>
+</nav>
+  <p class="hint">Tap each level to clear it ↓ or <a id="cv-link" href="cv.html">read the plain CV</a></p>
+</header>
+<main>
+  <h2 class="sec">Career quest</h2>
+  <ol class="map">
+<li class="level current" id="fravega">
+  <details name="quest">
+    <summary>
+      <span class="coin"><img class="coin-img" src="assets/logos/fravega.webp" alt="Frávega logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 9 · you are here</span>
+        <span class="company">Frávega</span>
+        <span class="role">Principal Full-Stack Engineer</span>
+        <span class="period">Aug 2025 – Present</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Principal engineer on a large-scale web platform refactor with Next.js and Go.</li><li>Earlier, tech lead of a new React Native app for sellers: architecture, shared mobile modules, design system and BFF services.</li><li>Introduced Claude Code and GitHub Copilot as the team's core AI toolkit; define architecture standards and mentor engineers.</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>Next.js</li><li>Go</li><li>React Native</li><li>Tailwind</li><li>AI-assisted dev</li></ul>
+    </div></div>
+  </details>
+</li>
+<li class="level" id="dk">
+  <details name="quest">
+    <summary>
+      <span class="coin"><img class="coin-img" src="assets/logos/diamond-kinetics.webp" alt="Diamond Kinetics logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 8</span>
+        <span class="company">Diamond Kinetics</span>
+        <span class="role">Senior Software Engineer, then Consultant</span>
+        <span class="period">Oct 2024 – Present</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Full-stack work on the SidelineHD live streaming platform across web and mobile.</li><li>Focused on reliability, live-data performance and creator experience; mentored peers and improved test automation.</li><li>Continuing as a consultant, applying AI-assisted engineering practices.</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>React</li><li>React Native</li><li>Python</li><li>Firebase</li></ul>
+    </div></div>
+  </details>
+</li>
+<li class="level" id="tenet">
+  <details name="quest">
+    <summary>
+      <span class="coin"><span class="coin-mono" aria-hidden="true">TS</span><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 7</span>
+        <span class="company">Tenet Software</span>
+        <span class="role">React Native Team Lead</span>
+        <span class="period">Aug 2023 – Sep 2024</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Led development and global store distribution of media streaming apps for Apple TV, Android TV, Android and iOS.</li><li>Built a Roku streaming app from scratch and automated release and store-compliance pipelines.</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>React Native</li><li>Roku</li><li>Apple TV</li><li>Android TV</li></ul>
+    </div></div>
+  </details>
+</li>
+<li class="level" id="wibond">
+  <details name="quest">
+    <summary>
+      <span class="coin"><img class="coin-img" src="assets/logos/wibond.webp" alt="Wibond logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 6</span>
+        <span class="company">Wibond</span>
+        <span class="role">Senior Software Engineer / React Native Lead</span>
+        <span class="period">Aug 2022 – Oct 2024 · Integration project Feb – May 2025</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Led the core React Native team that delivered a virtual wallet and a Buy Now Pay Later app for Android and iOS.</li><li>Owned technical discovery and product architecture; integrated Metamap, TAPI, TiendaNube, Shopify and Mobbex.</li><li>Built Go microservices on AWS, including a production service integrating PayWay (payments) and Koin (fraud prevention).</li><li>Built a transactional payment portal (Next.js, Tailwind) and a modular customer portal (Angular).</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>React Native</li><li>Go</li><li>AWS</li><li>Next.js</li><li>Angular</li><li>Redux Saga</li></ul>
+    </div></div>
+  </details>
+</li>
+<li class="level" id="leniolabs">
+  <details name="quest">
+    <summary>
+      <span class="coin"><span class="coin-mono" aria-hidden="true">LL</span><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 5</span>
+        <span class="company">Leniolabs</span>
+        <span class="role">Senior React Native Developer</span>
+        <span class="period">Jan 2022 – Aug 2022</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Developed a highly regulated loan origination app for the U.S. market (Ellie Mae client).</li><li>Wrote compliance-ready unit tests and worked across backend, engineering and regulatory compliance teams.</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>React Native</li><li>Redux Saga</li><li>Jest</li></ul>
+    </div></div>
+  </details>
+</li>
+<li class="level" id="telecom">
+  <details name="quest">
+    <summary>
+      <span class="coin"><img class="coin-img" src="assets/logos/telecom.webp" alt="Telecom Argentina logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 4</span>
+        <span class="company">Telecom Argentina</span>
+        <span class="role">Software Developer</span>
+        <span class="period">Jul 2021 – Jan 2022</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Contributed to the PersonalPay virtual wallet for Android and iOS.</li><li>Wrote automated unit tests with Jest; partnered with UI/UX and QA to secure production quality.</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>React Native</li><li>React</li><li>Node.js</li><li>Jest</li></ul>
+    </div></div>
+  </details>
+</li>
+<li class="level" id="openpass">
+  <details name="quest">
+    <summary>
+      <span class="coin"><span class="coin-mono" aria-hidden="true">OP</span><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 3</span>
+        <span class="company">Open Pass</span>
+        <span class="role">Frontend Developer</span>
+        <span class="period">Nov 2020 – Jul 2021</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Built white-label enterprise virtual wallet solutions with React Native, React and Flutter.</li><li>Improved codebase modularity and quality through testing architecture and detailed code reviews.</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>React Native</li><li>React</li><li>Flutter</li><li>Redux Saga</li></ul>
+    </div></div>
+  </details>
+</li>
+<li class="level" id="fca">
+  <details name="quest">
+    <summary>
+      <span class="coin"><span class="coin-mono" aria-hidden="true">FCA</span><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 2</span>
+        <span class="company">FCA (Stellantis)</span>
+        <span class="role">Junior Full-Stack Developer</span>
+        <span class="period">Nov 2019 – Nov 2020</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Selected for the internal innovation team of Fiat Chrysler Automobiles (now Stellantis).</li><li>Built experimental React, React Native and Node.js solutions for product infrastructure and user-facing performance problems.</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>React</li><li>React Native</li><li>Node.js</li></ul>
+    </div></div>
+  </details>
+</li>
+<li class="level" id="maketechnology">
+  <details name="quest">
+    <summary>
+      <span class="coin"><span class="coin-mono" aria-hidden="true">MT</span><span class="star" aria-hidden="true">★</span></span>
+      <span class="head">
+        <span class="lvl">Level 1</span>
+        <span class="company">MakeTechnology</span>
+        <span class="role">Junior Software Developer</span>
+        <span class="period">Jan 2019 – Jul 2019</span>
+      </span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="body"><div class="inner">
+      <ul class="points"><li>Owned client-facing frontend development with React.js and Vue.js.</li><li>Maintained the main company web properties and custom UI component libraries.</li></ul>
+      <ul class="chips" aria-label="Tech used"><li>React</li><li>Vue.js</li></ul>
+    </div></div>
+  </details>
+</li>
+  </ol>
+  <h2 class="sec">Skill badges</h2>
+  <div class="skills"><section class="skill-group"><h3>Applied AI</h3><ul class="chips"><li>Claude Code</li><li>GitHub Copilot</li><li>AI-assisted refactoring</li><li>Automated testing</li><li>Machine learning (UDESA)</li></ul></section>
+<section class="skill-group"><h3>Frontend &amp; Mobile</h3><ul class="chips"><li>React</li><li>React Native</li><li>Next.js</li><li>TypeScript</li><li>Redux</li><li>Tailwind CSS</li><li>Flutter</li><li>Vue.js</li><li>Angular</li></ul></section>
+<section class="skill-group"><h3>Backend &amp; Infra</h3><ul class="chips"><li>Go</li><li>Node.js</li><li>Python</li><li>REST / BFF</li><li>Event-driven</li><li>AWS</li><li>Firebase</li><li>SQL</li><li>MongoDB</li><li>GitLab CI</li><li>Argo CD</li><li>Datadog</li></ul></section>
+<section class="skill-group"><h3>Ways of working</h3><ul class="chips"><li>Team leadership</li><li>Mentoring</li><li>Agile</li><li>Architecture</li><li>Stakeholder communication</li></ul></section></div>
+  <h2 class="sec">Education &amp; languages</h2>
+  <ul class="edu"><li><strong>UDESA</strong> — Master's in Artificial Intelligence (in progress): machine learning and intelligent data-driven systems.</li><li><strong>UADE</strong> — Informatics Engineering (2017 – 2023); Computer Analyst and Software Development Technician (2017 – 2022).</li></ul>
+  <p class="langs">Spanish (native) · English (advanced, Cambridge FCE C1) · Italian (intermediate) · Portuguese (basic) · German (basic)</p>
+</main>
+<footer>
+  <p>Open to Applied AI Engineer roles.</p>
+  <nav class="cta" aria-label="Contact">
+  <a class="btn primary" href="mailto:astrizioli@gmail.com">astrizioli@gmail.com</a>
+  <a class="btn" href="https://www.linkedin.com/in/angelstrizioli" rel="me noopener">LinkedIn</a>
+  <a class="btn" href="https://github.com/AngelStrizioli" rel="me noopener">GitHub</a>
+  <a class="btn" href="assets/Angel_Strizioli_CV.pdf">Download CV (PDF)</a>
+</nav>
+</footer>
+<script>(function () {
+  document.documentElement.classList.add("js");
+  var levels = document.querySelectorAll(".level");
+  var xp = document.getElementById("xp");
+  var count = document.getElementById("cleared");
+  var total = levels.length;
+
+  function update() {
+    var n = document.querySelectorAll(".level.cleared").length;
+    count.textContent = n;
+    xp.style.width = (n / total) * 100 + "%";
+  }
+
+  levels.forEach(function (li) {
+    var d = li.querySelector("details");
+    d.addEventListener("toggle", function () {
+      if (d.open) { li.classList.add("cleared"); update(); }
+    });
+  });
+
+  // reveal on scroll; content is already in the HTML, this only animates it
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    levels.forEach(function (l) { io.observe(l); });
+  } else {
+    levels.forEach(function (l) { l.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>

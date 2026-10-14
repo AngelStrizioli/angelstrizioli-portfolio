@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "gh auth switch -u AngelStrizioli >/dev/null 2>&1 || true"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(flyctl deploy:*)",
+      "Bash(vercel deploy:*)",
+      "Bash(vercel build:*)",
+      "Bash(vercel pull:*)"
+    ]
+  }
+}
