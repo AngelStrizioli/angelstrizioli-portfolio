@@ -2,8 +2,21 @@
 
 > Senior Full-Stack & Applied AI Engineer. 8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.
 
-- [Plain CV](https://angelstrizioli-portfolio.vercel.app/cv.html)
-- [Interactive portfolio](https://angelstrizioli-portfolio.vercel.app/)
+## Pages
+- [Portfolio (en)](https://angelstrizioli-portfolio.vercel.app/)
+- [Plain CV (en)](https://angelstrizioli-portfolio.vercel.app/cv.html)
+- [Portfolio (es)](https://angelstrizioli-portfolio.vercel.app/es/)
+- [Plain CV (es)](https://angelstrizioli-portfolio.vercel.app/es/cv.html)
+- [Portfolio (pt)](https://angelstrizioli-portfolio.vercel.app/pt/)
+- [Plain CV (pt)](https://angelstrizioli-portfolio.vercel.app/pt/cv.html)
+
+## Personal projects (live demos)
+- [GlobalScout](https://globalscout-chi.vercel.app): Multi-sport scouting platform
+- [playerrec](https://playerrec-demo.vercel.app): UDESA Master's in AI · Machine Learning II
+- [Movie & series recommender](https://ingsoft-recomendador-web.vercel.app): UDESA Software Engineering
+- [Felix Sandwichería](https://felix-sandwicheria.onrender.com/): Restaurant CRM · real product
+
+## Contact
 - Email: astrizioli@gmail.com
 - LinkedIn: https://www.linkedin.com/in/angelstrizioli
 - GitHub: https://github.com/AngelStrizioli

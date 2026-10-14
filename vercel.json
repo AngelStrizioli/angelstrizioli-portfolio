@@ -1,12 +1,51 @@
 {
   "buildCommand": "node build.mjs",
   "outputDirectory": ".",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "headers": [
-    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/(.*)", "headers": [
-      { "key": "X-Content-Type-Options", "value": "nosniff" },
-      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-    ] }
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/cv",
+      "destination": "/cv.html",
+      "permanent": true
+    },
+    {
+      "source": "/es/cv",
+      "destination": "/es/cv.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt/cv",
+      "destination": "/pt/cv.html",
+      "permanent": true
+    },
+    {
+      "source": "/assets/Angel_Strizioli_CV.pdf",
+      "destination": "/assets/Angel_Strizioli_CV_en.pdf",
+      "permanent": true
+    }
   ]
 }

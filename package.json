@@ -6,6 +6,6 @@
   "scripts": {
     "build": "node build.mjs",
     "dev": "node build.mjs && npx --yes serve -l 3000 .",
-    "pdf": "node build.mjs && '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --no-pdf-header-footer --print-to-pdf=assets/Angel_Strizioli_CV.pdf cv.html"
+    "pdf": "node build.mjs && '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --no-pdf-header-footer --print-to-pdf=assets/Angel_Strizioli_CV_en.pdf cv.html && '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --no-pdf-header-footer --print-to-pdf=assets/Angel_Strizioli_CV_es.pdf es/cv.html && '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --no-pdf-header-footer --print-to-pdf=assets/Angel_Strizioli_CV_pt.pdf pt/cv.html"
   }
 }

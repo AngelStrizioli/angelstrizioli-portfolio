@@ -1,7 +1,8 @@
 # Angel E. Strizioli: Portfolio
 
 **Live site: https://angelstrizioli-portfolio.vercel.app/**
-Plain-text CV: https://angelstrizioli-portfolio.vercel.app/cv · PDF: https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV.pdf
+Languages: [English](https://angelstrizioli-portfolio.vercel.app/) · [Español](https://angelstrizioli-portfolio.vercel.app/es/) · [Português](https://angelstrizioli-portfolio.vercel.app/pt/)
+Plain-text CV: [EN](https://angelstrizioli-portfolio.vercel.app/cv.html) · [ES](https://angelstrizioli-portfolio.vercel.app/es/cv.html) · [PT](https://angelstrizioli-portfolio.vercel.app/pt/cv.html) · PDF: [EN](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_en.pdf) · [ES](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_es.pdf) · [PT](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_pt.pdf)
 
 An interactive career quest map: each company is a level, tap it to clear it and read the role, leadership scope and stack. Static, vanilla JS, mobile-first, around 22 KB of HTML.
 
@@ -36,6 +37,13 @@ An interactive career quest map: each company is a level, tap it to clear it and
 - **Backend & infra:** Go, Node.js, Python, PostgreSQL, SQL, MongoDB, REST / BFF, event-driven, AWS, Firebase, GitLab CI, Argo CD, Datadog
 - **Leadership:** tech lead, team leadership, mentoring, architecture standards, technical planning, Agile
 
+### Personal projects (live demos)
+
+- **[GlobalScout](https://globalscout-chi.vercel.app)**: multi-sport scouting platform (TypeScript, Postgres + pgvector, Supabase, Playwright).
+- **[playerrec](https://playerrec-demo.vercel.app)**: football player recommendation robust to small samples and missing data; UDESA Master's in AI, Machine Learning II.
+- **[Movie & series recommender](https://ingsoft-recomendador-web.vercel.app)**: hybrid ML recommendations with explanations; UDESA Software Engineering.
+- **[Felix Sandwichería](https://felix-sandwicheria.onrender.com/)**: restaurant CRM with a WhatsApp ordering bot and a live kitchen dashboard (staff login).
+
 ### Education & languages
 
 - **UDESA:** Master's in Artificial Intelligence (in progress)
@@ -44,13 +52,14 @@ An interactive career quest map: each company is a level, tap it to clear it and
 
 ## How it works
 
-- `content.mjs` holds all the content; `src/` holds the styles and the small script.
-- `node build.mjs` generates `index.html`, `cv.html`, `sitemap.xml`, `robots.txt` and `llms.txt`. There are no dependencies.
+- `content.mjs` holds the shared data (companies, dates, projects); `locales/{en,es,pt}.mjs` hold all the text; `src/` holds the styles and the small script.
+- `node build.mjs` generates `index.html` and `cv.html` for each language (`/`, `/es/`, `/pt/`) plus `sitemap.xml` (with `hreflang`), `robots.txt` and `llms.txt`. There are no dependencies.
+- The language switcher is plain links to separate static pages, so every language is crawlable without JS.
 - All CV content is real HTML, so crawlers and AI parsers read it without running JS. The game is progressive enhancement.
 
 ```sh
 npm run build   # regenerate the static files
-npm run pdf     # rebuild + regenerate assets/Angel_Strizioli_CV.pdf (needs Google Chrome)
+npm run pdf     # rebuild + regenerate the 3 PDFs in assets/ (needs Google Chrome)
 python3 -m http.server 4173   # preview locally
 vercel deploy --prod          # deploy
 ```

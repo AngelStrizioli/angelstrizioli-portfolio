@@ -4,15 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Angel E. Strizioli — CV</title>
-<meta name="description" content="Plain-text CV of Angel E. Strizioli, Senior Full-Stack &amp; Applied AI Engineer.">
+<meta name="description" content="CV: Angel E. Strizioli, Senior Full-Stack &amp; Applied AI Engineer.">
 <meta name="theme-color" content="#0e1116">
 <link rel="canonical" href="https://angelstrizioli-portfolio.vercel.app/cv.html">
+<link rel="alternate" hreflang="en" href="https://angelstrizioli-portfolio.vercel.app/cv.html">
+<link rel="alternate" hreflang="es" href="https://angelstrizioli-portfolio.vercel.app/es/cv.html">
+<link rel="alternate" hreflang="pt" href="https://angelstrizioli-portfolio.vercel.app/pt/cv.html">
+<link rel="alternate" hreflang="x-default" href="https://angelstrizioli-portfolio.vercel.app/cv.html">
 <meta property="og:type" content="profile">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Angel E. Strizioli — CV">
-<meta property="og:description" content="Plain-text CV of Angel E. Strizioli, Senior Full-Stack &amp; Applied AI Engineer.">
+<meta property="og:description" content="CV: Angel E. Strizioli, Senior Full-Stack &amp; Applied AI Engineer.">
 <meta property="og:url" content="https://angelstrizioli-portfolio.vercel.app/cv.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e1116'/%3E%3Ctext x='16' y='22' font-size='17' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2339ff9c'%3EAS%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Angel E. Strizioli","jobTitle":"Senior Full-Stack & Applied AI Engineer","description":"8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.","url":"https://angelstrizioli-portfolio.vercel.app","email":"mailto:astrizioli@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"},"sameAs":["https://www.linkedin.com/in/angelstrizioli","https://github.com/AngelStrizioli"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad de San Andrés (UDESA)"},{"@type":"CollegeOrUniversity","name":"UADE"}],"worksFor":[{"@type":"Organization","name":"Frávega"},{"@type":"Organization","name":"Diamond Kinetics"}],"knowsAbout":["Claude Code","GitHub Copilot","AI-assisted refactoring","Automated testing","Machine learning (UDESA)","React","React Native","Next.js","TypeScript","Redux","Tailwind CSS","Flutter","Vue.js","Angular","Go","Node.js","Python","REST / BFF","Event-driven","AWS","Firebase","PostgreSQL","SQL","MongoDB","GitLab CI","Argo CD","Datadog","Tech lead","Principal engineer","Team leadership","Mentoring & coaching","Architecture standards","Technical planning","Backlog prioritization","Agile (Scrum / Kanban)","Stakeholder communication"],"knowsLanguage":["es","en","it","pt","de"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Angel E. Strizioli","jobTitle":"Senior Full-Stack & Applied AI Engineer","description":"8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.","url":"https://angelstrizioli-portfolio.vercel.app/","inLanguage":"en","email":"mailto:astrizioli@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"},"sameAs":["https://www.linkedin.com/in/angelstrizioli","https://github.com/AngelStrizioli"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad de San Andrés (UDESA)"},{"@type":"CollegeOrUniversity","name":"UADE"}],"worksFor":[{"@type":"Organization","name":"Frávega"},{"@type":"Organization","name":"Diamond Kinetics"}],"knowsAbout":["Claude Code","GitHub Copilot","AI-assisted refactoring","Automated testing","Machine learning (UDESA)","React","React Native","Next.js","TypeScript","Redux","Tailwind CSS","Flutter","Vue.js","Angular","Go","Node.js","Python","REST / BFF","Event-driven","AWS","Firebase","PostgreSQL","SQL","MongoDB","GitLab CI","Argo CD","Datadog","Tech lead","Principal engineer","Team leadership","Mentoring & coaching","Architecture standards","Technical planning","Backlog prioritization","Agile (Scrum / Kanban)","Stakeholder communication"],"knowsLanguage":["es","en","it","pt","de"]}</script>
 <style>:root{--bg:#0e1116;--panel:#161b22;--line:#252c36;--text:#e6edf3;--muted:#8b97a5;--accent:#39ff9c;--accent-d:#1c8f5a;--r:14px;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -87,9 +92,26 @@ details[open] .inner{padding:4px 16px 16px}
 .skill-group h3{margin:0 0 8px;font-size:1rem}
 .edu{padding-left:18px;color:#c4cdd6}.langs{color:var(--muted);font-size:14px}
 footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
+/* language switcher */
+.lang{display:flex;gap:2px;margin-left:2px}
+.lang a{font:700 11px var(--mono);color:var(--muted);text-decoration:none;padding:6px 7px;border-radius:7px;line-height:1}
+.lang a:hover{color:var(--text)}
+.lang a[aria-current]{color:#04120b;background:var(--accent)}
+.cv-page .lang{display:inline-flex}.cv-page .lang a{color:#555;background:none}.cv-page .lang a[aria-current]{color:#fff;background:#0a5}
+/* personal projects */
+.sec-sub{margin:-8px 0 16px;color:var(--muted);font-size:14px}
+.projects{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.proj{display:flex;flex-direction:column;gap:10px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);transition:border-color .2s,transform .2s}
+.proj:hover{border-color:var(--accent-d);transform:translateY(-2px)}
+.proj h3{margin:0;font-size:1.1rem}
+.ptag{margin:0;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.pblurb{margin:0;color:#c4cdd6;font-size:15px}
+.pnote{margin:0;font-size:13px;color:#ffb84d}
+.btn.demo{align-self:flex-start;margin-top:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}}
 @keyframes blink{50%{opacity:0}}
-@media (min-width:760px){body{font-size:17px}.hero{padding-top:72px}.skills{grid-template-columns:1fr 1fr}.map:before{left:31px}}
+@media (min-width:760px){.projects{grid-template-columns:1fr 1fr}body{font-size:17px}.hero{padding-top:72px}.skills{grid-template-columns:1fr 1fr}.map:before{left:31px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.js .level{opacity:1;transform:none}html{scroll-behavior:auto}}
 /* plain CV page */
 body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;padding:24px 0}.cv-page a{color:#0a5}.cv-page h2{border-bottom:1px solid #ccc;padding-bottom:4px;margin-top:28px}.cv-page .title{color:#333}.job{margin:14px 0}.job h3{margin:0}.job .period,.tech{color:#555;font-size:14px;margin:2px 0}
@@ -98,7 +120,7 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
 </head>
 <body class="cv">
 <main class="cv-page">
-  <p><a href="/">← Back to the game</a></p>
+  <p><a href="/">← Back to the game</a> · <nav class="lang" aria-label="Language"><a href="/cv.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="/es/cv.html" hreflang="es" lang="es">ES</a><a href="/pt/cv.html" hreflang="pt" lang="pt">PT</a></nav></p>
   <h1>Angel E. Strizioli</h1>
   <p class="title">Senior Full-Stack &amp; Applied AI Engineer</p>
   <p>Buenos Aires, Argentina · <a href="mailto:astrizioli@gmail.com">astrizioli@gmail.com</a> · <a href="https://www.linkedin.com/in/angelstrizioli">LinkedIn</a> · <a href="https://github.com/AngelStrizioli">GitHub</a></p>
@@ -118,6 +140,11 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
 <section class="job"><h3>Open Pass — Frontend Developer</h3><p class="period"><strong>Full-time:</strong> Frontend Developer, Nov 2020 – Jul 2021</p><ul><li>Built white-label enterprise virtual wallet solutions with React Native, React and Flutter.</li><li>Improved codebase modularity and quality through testing architecture and detailed code reviews.</li></ul><p class="tech">Tech: React Native, React, Flutter, Redux Saga</p></section>
 <section class="job"><h3>FCA (Stellantis) — Junior Full-Stack Developer</h3><p class="period"><strong>Full-time:</strong> Junior Full-Stack Developer, Nov 2019 – Nov 2020</p><ul><li>Selected for the internal innovation team of Fiat Chrysler Automobiles (now Stellantis).</li><li>Built experimental React, React Native and Node.js solutions for product infrastructure and user-facing performance problems.</li></ul><p class="tech">Tech: React, React Native, Node.js</p></section>
 <section class="job"><h3>MakeTechnology — Junior Software Developer</h3><p class="period"><strong>Full-time:</strong> Junior Software Developer, Jan 2019 – Jul 2019</p><ul><li>Owned client-facing frontend development with React.js and Vue.js.</li><li>Maintained the main company web properties and custom UI component libraries.</li></ul><p class="tech">Tech: React, Vue.js</p></section>
+  <h2>Personal projects</h2>
+  <section class="job"><h3>GlobalScout — <a href="https://globalscout-chi.vercel.app">https://globalscout-chi.vercel.app</a></h3><p class="period">Multi-sport scouting platform</p><p>Scouting platform for youth and amateur sport, built as a full-stack TypeScript monorepo with a Postgres + pgvector backend and end-to-end tests with accessibility checks.</p><p class="tech">Tech: TypeScript, PostgreSQL, pgvector, Supabase, Playwright</p></section>
+<section class="job"><h3>playerrec — <a href="https://playerrec-demo.vercel.app">https://playerrec-demo.vercel.app</a></h3><p class="period">UDESA Master's in AI · Machine Learning II</p><p>Football player recommendation that stays robust with small samples and missing data: a self-supervised encoder, embedding uncertainty and a blend governed by that uncertainty. Includes a scouting view and a lab that visualizes the algorithm. Built with two teammates on anonymized public data.</p><p class="tech">Tech: Python, Self-supervised learning, Embeddings, Uncertainty</p></section>
+<section class="job"><h3>Movie &amp; series recommender — <a href="https://ingsoft-recomendador-web.vercel.app">https://ingsoft-recomendador-web.vercel.app</a></h3><p class="period">UDESA Software Engineering</p><p>Users rate movies and series, build lists, follow people and get personalized recommendations with the reason behind each one, from a hybrid ML model. Built with a team workflow of PRs, hooks, multi-level tests and CI/CD.</p><p class="tech">Tech: Hybrid ML model, Python, CI/CD, Vercel, Fly.io</p></section>
+<section class="job"><h3>Felix Sandwichería — <a href="https://felix-sandwicheria.onrender.com/">https://felix-sandwicheria.onrender.com/</a></h3><p class="period">Restaurant CRM · real product</p><p>CRM for a restaurant: orders arrive through a WhatsApp bot and land in a live kitchen dashboard, with menu and stock admin behind a staff login. Node.js bot, React dashboard and Supabase. Staff-only app: the demo opens at a login screen.</p><p class="tech">Tech: React, Node.js, Supabase, PostgreSQL, WhatsApp (Baileys), Render</p></section>
   <h2>Education</h2><ul><li><strong>UDESA</strong> — Master's in Artificial Intelligence (in progress): machine learning and intelligent data-driven systems.</li><li><strong>UADE</strong> — Informatics Engineering (2017 – 2023); Computer Analyst and Software Development Technician (2017 – 2022).</li></ul>
   <h2>Languages</h2><p>Spanish (native) · English (advanced, Cambridge FCE C1) · Italian (intermediate) · Portuguese (basic) · German (basic)</p>
 </main>

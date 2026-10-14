@@ -7,12 +7,17 @@
 <meta name="description" content="8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.">
 <meta name="theme-color" content="#0e1116">
 <link rel="canonical" href="https://angelstrizioli-portfolio.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://angelstrizioli-portfolio.vercel.app/">
+<link rel="alternate" hreflang="es" href="https://angelstrizioli-portfolio.vercel.app/es/">
+<link rel="alternate" hreflang="pt" href="https://angelstrizioli-portfolio.vercel.app/pt/">
+<link rel="alternate" hreflang="x-default" href="https://angelstrizioli-portfolio.vercel.app/">
 <meta property="og:type" content="profile">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Angel E. Strizioli — Senior Full-Stack &amp; Applied AI Engineer">
 <meta property="og:description" content="8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.">
 <meta property="og:url" content="https://angelstrizioli-portfolio.vercel.app/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e1116'/%3E%3Ctext x='16' y='22' font-size='17' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2339ff9c'%3EAS%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Angel E. Strizioli","jobTitle":"Senior Full-Stack & Applied AI Engineer","description":"8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.","url":"https://angelstrizioli-portfolio.vercel.app","email":"mailto:astrizioli@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"},"sameAs":["https://www.linkedin.com/in/angelstrizioli","https://github.com/AngelStrizioli"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad de San Andrés (UDESA)"},{"@type":"CollegeOrUniversity","name":"UADE"}],"worksFor":[{"@type":"Organization","name":"Frávega"},{"@type":"Organization","name":"Diamond Kinetics"}],"knowsAbout":["Claude Code","GitHub Copilot","AI-assisted refactoring","Automated testing","Machine learning (UDESA)","React","React Native","Next.js","TypeScript","Redux","Tailwind CSS","Flutter","Vue.js","Angular","Go","Node.js","Python","REST / BFF","Event-driven","AWS","Firebase","PostgreSQL","SQL","MongoDB","GitLab CI","Argo CD","Datadog","Tech lead","Principal engineer","Team leadership","Mentoring & coaching","Architecture standards","Technical planning","Backlog prioritization","Agile (Scrum / Kanban)","Stakeholder communication"],"knowsLanguage":["es","en","it","pt","de"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Angel E. Strizioli","jobTitle":"Senior Full-Stack & Applied AI Engineer","description":"8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.","url":"https://angelstrizioli-portfolio.vercel.app/","inLanguage":"en","email":"mailto:astrizioli@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"},"sameAs":["https://www.linkedin.com/in/angelstrizioli","https://github.com/AngelStrizioli"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad de San Andrés (UDESA)"},{"@type":"CollegeOrUniversity","name":"UADE"}],"worksFor":[{"@type":"Organization","name":"Frávega"},{"@type":"Organization","name":"Diamond Kinetics"}],"knowsAbout":["Claude Code","GitHub Copilot","AI-assisted refactoring","Automated testing","Machine learning (UDESA)","React","React Native","Next.js","TypeScript","Redux","Tailwind CSS","Flutter","Vue.js","Angular","Go","Node.js","Python","REST / BFF","Event-driven","AWS","Firebase","PostgreSQL","SQL","MongoDB","GitLab CI","Argo CD","Datadog","Tech lead","Principal engineer","Team leadership","Mentoring & coaching","Architecture standards","Technical planning","Backlog prioritization","Agile (Scrum / Kanban)","Stakeholder communication"],"knowsLanguage":["es","en","it","pt","de"]}</script>
 <style>:root{--bg:#0e1116;--panel:#161b22;--line:#252c36;--text:#e6edf3;--muted:#8b97a5;--accent:#39ff9c;--accent-d:#1c8f5a;--r:14px;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -87,9 +92,26 @@ details[open] .inner{padding:4px 16px 16px}
 .skill-group h3{margin:0 0 8px;font-size:1rem}
 .edu{padding-left:18px;color:#c4cdd6}.langs{color:var(--muted);font-size:14px}
 footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
+/* language switcher */
+.lang{display:flex;gap:2px;margin-left:2px}
+.lang a{font:700 11px var(--mono);color:var(--muted);text-decoration:none;padding:6px 7px;border-radius:7px;line-height:1}
+.lang a:hover{color:var(--text)}
+.lang a[aria-current]{color:#04120b;background:var(--accent)}
+.cv-page .lang{display:inline-flex}.cv-page .lang a{color:#555;background:none}.cv-page .lang a[aria-current]{color:#fff;background:#0a5}
+/* personal projects */
+.sec-sub{margin:-8px 0 16px;color:var(--muted);font-size:14px}
+.projects{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.proj{display:flex;flex-direction:column;gap:10px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);transition:border-color .2s,transform .2s}
+.proj:hover{border-color:var(--accent-d);transform:translateY(-2px)}
+.proj h3{margin:0;font-size:1.1rem}
+.ptag{margin:0;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.pblurb{margin:0;color:#c4cdd6;font-size:15px}
+.pnote{margin:0;font-size:13px;color:#ffb84d}
+.btn.demo{align-self:flex-start;margin-top:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}}
 @keyframes blink{50%{opacity:0}}
-@media (min-width:760px){body{font-size:17px}.hero{padding-top:72px}.skills{grid-template-columns:1fr 1fr}.map:before{left:31px}}
+@media (min-width:760px){.projects{grid-template-columns:1fr 1fr}body{font-size:17px}.hero{padding-top:72px}.skills{grid-template-columns:1fr 1fr}.map:before{left:31px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.js .level{opacity:1;transform:none}html{scroll-behavior:auto}}
 /* plain CV page */
 body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;padding:24px 0}.cv-page a{color:#0a5}.cv-page h2{border-bottom:1px solid #ccc;padding-bottom:4px;margin-top:28px}.cv-page .title{color:#333}.job{margin:14px 0}.job h3{margin:0}.job .period,.tech{color:#555;font-size:14px;margin:2px 0}
@@ -98,10 +120,11 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
 </head>
 <body>
 <a class="skip" href="#cv-link">Skip the game</a>
-<div class="hud" role="status" aria-live="polite">
+<div class="hud">
   <span class="hud-name">AS</span>
   <div class="bar" aria-hidden="true"><i id="xp"></i></div>
-  <span class="hud-count"><b id="cleared">0</b>/9 cleared</span>
+  <span class="hud-count" role="status" aria-live="polite"><b id="cleared">0</b>/9 cleared</span>
+  <nav class="lang" aria-label="Language"><a href="/" hreflang="en" lang="en" aria-current="true">EN</a><a href="/es/" hreflang="es" lang="es">ES</a><a href="/pt/" hreflang="pt" lang="pt">PT</a></nav>
 </div>
 <header class="hero">
   <p class="eyebrow">Press start</p>
@@ -112,9 +135,9 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
   <a class="btn primary" href="mailto:astrizioli@gmail.com">astrizioli@gmail.com</a>
   <a class="btn" href="https://www.linkedin.com/in/angelstrizioli" rel="me noopener">LinkedIn</a>
   <a class="btn" href="https://github.com/AngelStrizioli" rel="me noopener">GitHub</a>
-  <a class="btn" href="assets/Angel_Strizioli_CV.pdf">Download CV (PDF)</a>
+  <a class="btn" href="/assets/Angel_Strizioli_CV_en.pdf">Download CV (PDF)</a>
 </nav>
-  <p class="hint">Tap each level to clear it ↓ or <a id="cv-link" href="cv.html">read the plain CV</a></p>
+  <p class="hint">Tap each level to clear it ↓ or <a id="cv-link" href="/cv.html">read the plain CV</a></p>
 </header>
 <main>
   <h2 class="sec">Career quest</h2>
@@ -122,7 +145,7 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
 <li class="level current" id="fravega">
   <details name="quest">
     <summary>
-      <span class="coin"><img class="coin-img" src="assets/logos/fravega.webp" alt="Frávega logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
+      <span class="coin"><img class="coin-img" src="/assets/logos/fravega.webp" alt="Frávega logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
       <span class="head">
         <span class="lvl">Level 9 · you are here</span>
         <span class="company">Frávega</span>
@@ -143,7 +166,7 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
 <li class="level" id="dk">
   <details name="quest">
     <summary>
-      <span class="coin"><img class="coin-img" src="assets/logos/diamond-kinetics.webp" alt="Diamond Kinetics logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
+      <span class="coin"><img class="coin-img" src="/assets/logos/diamond-kinetics.webp" alt="Diamond Kinetics logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
       <span class="head">
         <span class="lvl">Level 8</span>
         <span class="company">Diamond Kinetics</span>
@@ -185,7 +208,7 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
 <li class="level" id="wibond">
   <details name="quest">
     <summary>
-      <span class="coin"><img class="coin-img" src="assets/logos/wibond.webp" alt="Wibond logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
+      <span class="coin"><img class="coin-img" src="/assets/logos/wibond.webp" alt="Wibond logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
       <span class="head">
         <span class="lvl">Level 6</span>
         <span class="company">Wibond</span>
@@ -227,7 +250,7 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
 <li class="level" id="telecom">
   <details name="quest">
     <summary>
-      <span class="coin"><img class="coin-img" src="assets/logos/telecom.webp" alt="Telecom Argentina logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
+      <span class="coin"><img class="coin-img" src="/assets/logos/telecom.webp" alt="Telecom Argentina logo" width="48" height="48" loading="lazy" decoding="async"><span class="star" aria-hidden="true">★</span></span>
       <span class="head">
         <span class="lvl">Level 4</span>
         <span class="company">Telecom Argentina</span>
@@ -309,6 +332,42 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
   </details>
 </li>
   </ol>
+  <h2 class="sec">Personal projects</h2>
+  <p class="sec-sub">Live demos, open them and try them.</p>
+  <ul class="projects">
+<li class="proj">
+  <p class="ptag">Multi-sport scouting platform</p>
+  <h3>GlobalScout</h3>
+  <p class="pblurb">Scouting platform for youth and amateur sport, built as a full-stack TypeScript monorepo with a Postgres + pgvector backend and end-to-end tests with accessibility checks.</p>
+  <ul class="chips" aria-label="Tech used"><li>TypeScript</li><li>PostgreSQL</li><li>pgvector</li><li>Supabase</li><li>Playwright</li></ul>
+  
+  <a class="btn demo" href="https://globalscout-chi.vercel.app" rel="noopener" target="_blank">Open live demo ↗<span class="sr"> — GlobalScout</span></a>
+</li>
+<li class="proj">
+  <p class="ptag">UDESA Master's in AI · Machine Learning II</p>
+  <h3>playerrec</h3>
+  <p class="pblurb">Football player recommendation that stays robust with small samples and missing data: a self-supervised encoder, embedding uncertainty and a blend governed by that uncertainty. Includes a scouting view and a lab that visualizes the algorithm. Built with two teammates on anonymized public data.</p>
+  <ul class="chips" aria-label="Tech used"><li>Python</li><li>Self-supervised learning</li><li>Embeddings</li><li>Uncertainty</li></ul>
+  
+  <a class="btn demo" href="https://playerrec-demo.vercel.app" rel="noopener" target="_blank">Open live demo ↗<span class="sr"> — playerrec</span></a>
+</li>
+<li class="proj">
+  <p class="ptag">UDESA Software Engineering</p>
+  <h3>Movie &amp; series recommender</h3>
+  <p class="pblurb">Users rate movies and series, build lists, follow people and get personalized recommendations with the reason behind each one, from a hybrid ML model. Built with a team workflow of PRs, hooks, multi-level tests and CI/CD.</p>
+  <ul class="chips" aria-label="Tech used"><li>Hybrid ML model</li><li>Python</li><li>CI/CD</li><li>Vercel</li><li>Fly.io</li></ul>
+  
+  <a class="btn demo" href="https://ingsoft-recomendador-web.vercel.app" rel="noopener" target="_blank">Open live demo ↗<span class="sr"> — Movie &amp; series recommender</span></a>
+</li>
+<li class="proj">
+  <p class="ptag">Restaurant CRM · real product</p>
+  <h3>Felix Sandwichería</h3>
+  <p class="pblurb">CRM for a restaurant: orders arrive through a WhatsApp bot and land in a live kitchen dashboard, with menu and stock admin behind a staff login. Node.js bot, React dashboard and Supabase.</p>
+  <ul class="chips" aria-label="Tech used"><li>React</li><li>Node.js</li><li>Supabase</li><li>PostgreSQL</li><li>WhatsApp (Baileys)</li><li>Render</li></ul>
+  <p class="pnote">Staff-only app: the demo opens at a login screen.</p>
+  <a class="btn demo" href="https://felix-sandwicheria.onrender.com/" rel="noopener" target="_blank">Open live demo ↗<span class="sr"> — Felix Sandwichería</span></a>
+</li>
+  </ul>
   <h2 class="sec">Skill badges</h2>
   <div class="skills"><section class="skill-group"><h3>Applied AI</h3><ul class="chips"><li>Claude Code</li><li>GitHub Copilot</li><li>AI-assisted refactoring</li><li>Automated testing</li><li>Machine learning (UDESA)</li></ul></section>
 <section class="skill-group"><h3>Frontend &amp; Mobile</h3><ul class="chips"><li>React</li><li>React Native</li><li>Next.js</li><li>TypeScript</li><li>Redux</li><li>Tailwind CSS</li><li>Flutter</li><li>Vue.js</li><li>Angular</li></ul></section>
@@ -324,7 +383,7 @@ body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;paddin
   <a class="btn primary" href="mailto:astrizioli@gmail.com">astrizioli@gmail.com</a>
   <a class="btn" href="https://www.linkedin.com/in/angelstrizioli" rel="me noopener">LinkedIn</a>
   <a class="btn" href="https://github.com/AngelStrizioli" rel="me noopener">GitHub</a>
-  <a class="btn" href="assets/Angel_Strizioli_CV.pdf">Download CV (PDF)</a>
+  <a class="btn" href="/assets/Angel_Strizioli_CV_en.pdf">Download CV (PDF)</a>
 </nav>
 </footer>
 <script>(function () {

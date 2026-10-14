@@ -72,9 +72,26 @@ details[open] .inner{padding:4px 16px 16px}
 .skill-group h3{margin:0 0 8px;font-size:1rem}
 .edu{padding-left:18px;color:#c4cdd6}.langs{color:var(--muted);font-size:14px}
 footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
+/* language switcher */
+.lang{display:flex;gap:2px;margin-left:2px}
+.lang a{font:700 11px var(--mono);color:var(--muted);text-decoration:none;padding:6px 7px;border-radius:7px;line-height:1}
+.lang a:hover{color:var(--text)}
+.lang a[aria-current]{color:#04120b;background:var(--accent)}
+.cv-page .lang{display:inline-flex}.cv-page .lang a{color:#555;background:none}.cv-page .lang a[aria-current]{color:#fff;background:#0a5}
+/* personal projects */
+.sec-sub{margin:-8px 0 16px;color:var(--muted);font-size:14px}
+.projects{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.proj{display:flex;flex-direction:column;gap:10px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);transition:border-color .2s,transform .2s}
+.proj:hover{border-color:var(--accent-d);transform:translateY(-2px)}
+.proj h3{margin:0;font-size:1.1rem}
+.ptag{margin:0;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.pblurb{margin:0;color:#c4cdd6;font-size:15px}
+.pnote{margin:0;font-size:13px;color:#ffb84d}
+.btn.demo{align-self:flex-start;margin-top:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}}
 @keyframes blink{50%{opacity:0}}
-@media (min-width:760px){body{font-size:17px}.hero{padding-top:72px}.skills{grid-template-columns:1fr 1fr}.map:before{left:31px}}
+@media (min-width:760px){.projects{grid-template-columns:1fr 1fr}body{font-size:17px}.hero{padding-top:72px}.skills{grid-template-columns:1fr 1fr}.map:before{left:31px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.js .level{opacity:1;transform:none}html{scroll-behavior:auto}}
 /* plain CV page */
 body.cv{background:#fff;color:#111}.cv-page{max-width:760px;margin:0 auto;padding:24px 0}.cv-page a{color:#0a5}.cv-page h2{border-bottom:1px solid #ccc;padding-bottom:4px;margin-top:28px}.cv-page .title{color:#333}.job{margin:14px 0}.job h3{margin:0}.job .period,.tech{color:#555;font-size:14px;margin:2px 0}
