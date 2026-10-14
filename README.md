@@ -1,15 +1,18 @@
 # Angel E. Strizioli: Portfolio
 
 **Live site: https://angelstrizioli-portfolio.vercel.app/**
-Languages: [English](https://angelstrizioli-portfolio.vercel.app/) · [Español](https://angelstrizioli-portfolio.vercel.app/es/) · [Português](https://angelstrizioli-portfolio.vercel.app/pt/)
-Plain-text CV: [EN](https://angelstrizioli-portfolio.vercel.app/cv.html) · [ES](https://angelstrizioli-portfolio.vercel.app/es/cv.html) · [PT](https://angelstrizioli-portfolio.vercel.app/pt/cv.html) · PDF: [EN](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_en.pdf) · [ES](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_es.pdf) · [PT](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_pt.pdf)
+· Languages: [English](https://angelstrizioli-portfolio.vercel.app/) · [Español](https://angelstrizioli-portfolio.vercel.app/es/) · [Português](https://angelstrizioli-portfolio.vercel.app/pt/)
+· Plain-text CV: [EN](https://angelstrizioli-portfolio.vercel.app/cv.html) · [ES](https://angelstrizioli-portfolio.vercel.app/es/cv.html) · [PT](https://angelstrizioli-portfolio.vercel.app/pt/cv.html)
+· PDF: [EN](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_en.pdf) · [ES](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_es.pdf) · [PT](https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV_pt.pdf)
 
 An interactive career quest map: each company is a level, tap it to clear it and read the role, leadership scope and stack. Static, vanilla JS, mobile-first, around 22 KB of HTML.
 
 ## Resume
 
 **Senior Full-Stack & Applied AI Engineer** · Buenos Aires, Argentina
-[astrizioli@gmail.com](mailto:astrizioli@gmail.com) · [LinkedIn](https://www.linkedin.com/in/angelstrizioli) · [GitHub](https://github.com/AngelStrizioli)
+· [astrizioli@gmail.com](mailto:astrizioli@gmail.com) 
+· [LinkedIn](https://www.linkedin.com/in/angelstrizioli) 
+· [GitHub](https://github.com/AngelStrizioli)
 
 8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. Tech lead and principal engineer: sets architecture and standards, mentors engineers. Works AI-first with Claude Code and GitHub Copilot in daily production delivery. Pursuing a Master's in Artificial Intelligence at UDESA.
 
@@ -49,17 +52,3 @@ An interactive career quest map: each company is a level, tap it to clear it and
 - **UDESA:** Master's in Artificial Intelligence (in progress)
 - **UADE:** Informatics Engineering (2017 – 2023)
 - Spanish (native) · English (advanced, C1) · Italian (intermediate) · Portuguese, German (basic)
-
-## How it works
-
-- `content.mjs` holds the shared data (companies, dates, projects); `locales/{en,es,pt}.mjs` hold all the text; `src/` holds the styles and the small script.
-- `node build.mjs` generates `index.html` and `cv.html` for each language (`/`, `/es/`, `/pt/`) plus `sitemap.xml` (with `hreflang`), `robots.txt` and `llms.txt`. There are no dependencies.
-- The language switcher is plain links to separate static pages, so every language is crawlable without JS.
-- All CV content is real HTML, so crawlers and AI parsers read it without running JS. The game is progressive enhancement.
-
-```sh
-npm run build   # regenerate the static files
-npm run pdf     # rebuild + regenerate the 3 PDFs in assets/ (needs Google Chrome)
-python3 -m http.server 4173   # preview locally
-vercel deploy --prod          # deploy
-```
