@@ -1,6 +1,6 @@
 # Angel E. Strizioli
 
-> Senior Full-Stack & Applied AI Engineer. 8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I work AI-first: Claude Code and GitHub Copilot are part of my daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.
+> Senior Full-Stack & Applied AI Engineer. 8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.
 
 - [Plain CV](https://angelstrizioli-portfolio.vercel.app/cv.html)
 - [Interactive portfolio](https://angelstrizioli-portfolio.vercel.app/)

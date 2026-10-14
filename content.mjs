@@ -7,7 +7,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/angelstrizioli",
   github: "https://github.com/AngelStrizioli",
   summary:
-    "8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I work AI-first: Claude Code and GitHub Copilot are part of my daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.",
+    "8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. I lead teams as tech lead and principal engineer, setting architecture and standards and mentoring engineers, and I work AI-first with Claude Code and GitHub Copilot in daily production delivery. Currently pursuing a Master's in Artificial Intelligence at UDESA.",
 };
 
 // Chronological, oldest first. The map renders newest at the top.
@@ -19,6 +19,7 @@ export const levels = [
     period: "Jan 2019 – Jul 2019",
     logo: null,
     mono: "MT",
+    tracks: [{ type: "Full-time", role: "Junior Software Developer", period: "Jan 2019 – Jul 2019" }],
     stack: ["React", "Vue.js"],
     points: [
       "Owned client-facing frontend development with React.js and Vue.js.",
@@ -32,6 +33,7 @@ export const levels = [
     period: "Nov 2019 – Nov 2020",
     logo: null,
     mono: "FCA",
+    tracks: [{ type: "Full-time", role: "Junior Full-Stack Developer", period: "Nov 2019 – Nov 2020" }],
     stack: ["React", "React Native", "Node.js"],
     points: [
       "Selected for the internal innovation team of Fiat Chrysler Automobiles (now Stellantis).",
@@ -45,6 +47,7 @@ export const levels = [
     period: "Nov 2020 – Jul 2021",
     logo: null,
     mono: "OP",
+    tracks: [{ type: "Full-time", role: "Frontend Developer", period: "Nov 2020 – Jul 2021" }],
     stack: ["React Native", "React", "Flutter", "Redux Saga"],
     points: [
       "Built white-label enterprise virtual wallet solutions with React Native, React and Flutter.",
@@ -57,6 +60,7 @@ export const levels = [
     role: "Software Developer",
     period: "Jul 2021 – Jan 2022",
     logo: "telecom.webp",
+    tracks: [{ type: "Full-time", role: "Software Developer", period: "Jul 2021 – Jan 2022" }],
     stack: ["React Native", "React", "Node.js", "Jest"],
     points: [
       "Contributed to the PersonalPay virtual wallet for Android and iOS.",
@@ -70,6 +74,7 @@ export const levels = [
     period: "Jan 2022 – Aug 2022",
     logo: null,
     mono: "LL",
+    tracks: [{ type: "Full-time", role: "Senior React Native Developer", period: "Jan 2022 – Aug 2022" }],
     stack: ["React Native", "Redux Saga", "Jest"],
     points: [
       "Developed a highly regulated loan origination app for the U.S. market (Ellie Mae client).",
@@ -80,14 +85,17 @@ export const levels = [
     id: "wibond",
     company: "Wibond",
     role: "Senior Software Engineer / React Native Lead",
-    period: "Aug 2022 – Oct 2024 · Integration project Feb – May 2025",
+    period: "Aug 2022 – May 2025",
     logo: "wibond.webp",
-    stack: ["React Native", "Go", "AWS", "Next.js", "Angular", "Redux Saga"],
+    tracks: [{ type: "Full-time", role: "Senior Software Engineer / React Native Lead", period: "Aug 2022 – Oct 2024" }, { type: "Consulting", role: "Senior Software Engineer, integration project", period: "Feb 2025 – May 2025" }],
+    stack: ["React Native", "Go", "PostgreSQL", "AWS", "Next.js", "Angular", "Redux Saga"],
+    lead: ["Led the core React Native team, owning delivery of the wallet and BNPL apps.", "Owned technical discovery and product architecture across partner integrations.", "Aligned multi-regional stakeholders on requirements, encryption security and incremental rollout plans."],
     points: [
-      "Led the core React Native team that delivered a virtual wallet and a Buy Now Pay Later app for Android and iOS.",
-      "Owned technical discovery and product architecture; integrated Metamap, TAPI, TiendaNube, Shopify and Mobbex.",
+      "Delivered a virtual wallet and a Buy Now Pay Later app for Android and iOS with React Native, Redux and Sagas.",
+      "Integrated Metamap, TAPI, TiendaNube, Shopify and Mobbex.",
       "Built Go microservices on AWS, including a production service integrating PayWay (payments) and Koin (fraud prevention).",
       "Built a transactional payment portal (Next.js, Tailwind) and a modular customer portal (Angular).",
+      "Designed and automated the test layers (Jest, React Native Testing Library).",
     ],
   },
   {
@@ -97,23 +105,28 @@ export const levels = [
     period: "Aug 2023 – Sep 2024",
     logo: null,
     mono: "TS",
-    stack: ["React Native", "Roku", "Apple TV", "Android TV"],
+    tracks: [{ type: "Consulting", role: "React Native Team Lead", period: "Aug 2023 – Sep 2024" }],
+    stack: ["React Native", "Roku", "Fire OS", "Apple TV", "Android TV"],
+    lead: ["Led the team end to end, from delivery planning to global app-store distribution.", "Coordinated release pipelines and store-compliance submissions."],
     points: [
-      "Led development and global store distribution of media streaming apps for Apple TV, Android TV, Android and iOS.",
-      "Built a Roku streaming app from scratch and automated release and store-compliance pipelines.",
+      "Delivered media streaming apps for Apple TV, Android TV, Roku, Amazon Fire TV (Fire OS), Android and iOS.",
+      "Built a Roku streaming app from scratch.",
+      "Automated release and app-store compliance pipelines.",
     ],
   },
   {
     id: "dk",
     company: "Diamond Kinetics",
-    role: "Senior Software Engineer, then Consultant",
+    role: "Senior Software Engineer, then AI Engineering Consultant",
     period: "Oct 2024 – Present",
     logo: "diamond-kinetics.webp",
-    stack: ["React", "React Native", "Python", "Firebase"],
+    tracks: [{ type: "Full-time", role: "Senior Software Engineer", period: "Oct 2024 – Mar 2026" }, { type: "Consulting", role: "Software AI Engineering Consultant", period: "Mar 2026 – Present" }],
+    stack: ["React", "React Native", "Python", "Firebase", "PostgreSQL"],
+    lead: ["Mentored engineering peers and worked closely with product and design owners.", "Improved developer tooling and test automation coverage for the team."],
     points: [
       "Full-stack work on the SidelineHD live streaming platform across web and mobile.",
-      "Focused on reliability, live-data performance and creator experience; mentored peers and improved test automation.",
-      "Continuing as a consultant, applying AI-assisted engineering practices.",
+      "Focused on reliability, live-data performance and creator experience.",
+      "As a consultant, building automated workflows with Claude and delivering production full-stack and mobile features with AI-assisted engineering practices.",
     ],
   },
   {
@@ -122,11 +135,13 @@ export const levels = [
     role: "Principal Full-Stack Engineer",
     period: "Aug 2025 – Present",
     logo: "fravega.webp",
-    stack: ["Next.js", "Go", "React Native", "Tailwind", "AI-assisted dev"],
+    tracks: [{ type: "Consulting", role: "React Native Tech Lead", period: "Aug 2025 – Jan 2026" }, { type: "Full-time", role: "Principal Full-Stack Engineer", period: "Mar 2026 – Present" }],
+    stack: ["Next.js", "Go", "PostgreSQL", "React Native", "Tailwind", "AI-assisted dev"],
+    lead: ["As tech lead, set the technical direction of a cross-functional squad: architecture, standards, delivery timelines and mentoring.", "As principal, define architecture layers and engineering delivery standards across the division.", "Introduced Claude Code and GitHub Copilot as the team's core AI toolkit and mentor engineers hands-on."],
     points: [
       "Principal engineer on a large-scale web platform refactor with Next.js and Go.",
-      "Earlier, tech lead of a new React Native app for sellers: architecture, shared mobile modules, design system and BFF services.",
-      "Introduced Claude Code and GitHub Copilot as the team's core AI toolkit; define architecture standards and mentor engineers.",
+      "Built a new React Native app for sellers: shared mobile modules, a Tailwind design system and BFF services.",
+      "Use AI-assisted development to speed up refactoring and raise test coverage.",
     ],
     current: true,
   },
@@ -143,11 +158,11 @@ export const skills = [
   },
   {
     group: "Backend & Infra",
-    items: ["Go", "Node.js", "Python", "REST / BFF", "Event-driven", "AWS", "Firebase", "SQL", "MongoDB", "GitLab CI", "Argo CD", "Datadog"],
+    items: ["Go", "Node.js", "Python", "REST / BFF", "Event-driven", "AWS", "Firebase", "PostgreSQL", "SQL", "MongoDB", "GitLab CI", "Argo CD", "Datadog"],
   },
   {
-    group: "Ways of working",
-    items: ["Team leadership", "Mentoring", "Agile", "Architecture", "Stakeholder communication"],
+    group: "Leadership",
+    items: ["Tech lead", "Principal engineer", "Team leadership", "Mentoring & coaching", "Architecture standards", "Technical planning", "Backlog prioritization", "Agile (Scrum / Kanban)", "Stakeholder communication"],
   },
 ];
 

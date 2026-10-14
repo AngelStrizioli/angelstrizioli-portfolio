@@ -72,11 +72,14 @@ const levelHtml = ordered
         <span class="company">${esc(l.company)}</span>
         <span class="role">${esc(l.role)}</span>
         <span class="period">${esc(l.period)}</span>
+        ${new Set(l.tracks.map((t) => t.type)).size > 1 ? '<span class="mix">Full-time + Consulting</span>' : l.tracks[0].type === "Consulting" ? '<span class="mix">Consulting</span>' : '<span class="mix full">Full-time</span>'}
       </span>
       <span class="chev" aria-hidden="true"></span>
     </summary>
     <div class="body"><div class="inner">
+      <ul class="tracks" aria-label="Employment type and dates">${l.tracks.map((t) => `<li><b class="tag ${t.type === "Consulting" ? "consult" : "full"}">${t.type}</b><span>${esc(t.role)}<small>${esc(t.period)}</small></span></li>`).join("")}</ul>
       <ul class="points">${l.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
+      ${l.lead ? `<div class="lead"><h4>Leadership</h4><ul>${l.lead.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></div>` : ""}
       <ul class="chips" aria-label="Tech used">${l.stack.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>
     </div></div>
   </details>
@@ -132,9 +135,9 @@ ${levelHtml}
 
 const cvLevels = ordered
   .map(
-    (l) => `<section class="job"><h3>${esc(l.company)} — ${esc(l.role)}</h3><p class="period">${esc(l.period)}</p><ul>${l.points
+    (l) => `<section class="job"><h3>${esc(l.company)} — ${esc(l.role)}</h3>${l.tracks.map((t) => `<p class="period"><strong>${t.type}:</strong> ${esc(t.role)}, ${esc(t.period)}</p>`).join("")}<ul>${l.points
       .map((p) => `<li>${esc(p)}</li>`)
-      .join("")}</ul><p class="tech">Tech: ${esc(l.stack.join(", "))}</p></section>`
+      .join("")}</ul>${l.lead ? `<p><strong>Leadership:</strong> ${esc(l.lead.join(" "))}</p>` : ""}<p class="tech">Tech: ${esc(l.stack.join(", "))}</p></section>`
   )
   .join("\n");
 
