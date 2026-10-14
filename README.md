@@ -1,14 +1,17 @@
 # Angel E. Strizioli: Portfolio
 
 **Live site: https://angelstrizioli-portfolio.vercel.app/**
-Plain-text CV: https://angelstrizioli-portfolio.vercel.app/cv · PDF: https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV.pdf
+· Plain-text CV: https://angelstrizioli-portfolio.vercel.app/cv 
+· PDF: https://angelstrizioli-portfolio.vercel.app/assets/Angel_Strizioli_CV.pdf
 
 An interactive career quest map: each company is a level, tap it to clear it and read the role, leadership scope and stack. Static, vanilla JS, mobile-first, around 22 KB of HTML.
 
 ## Resume
 
 **Senior Full-Stack & Applied AI Engineer** · Buenos Aires, Argentina
-[astrizioli@gmail.com](mailto:astrizioli@gmail.com) · [LinkedIn](https://www.linkedin.com/in/angelstrizioli) · [GitHub](https://github.com/AngelStrizioli)
+· [astrizioli@gmail.com](mailto:astrizioli@gmail.com) 
+· [LinkedIn](https://www.linkedin.com/in/angelstrizioli) 
+· [GitHub](https://github.com/AngelStrizioli)
 
 8+ years building web, mobile and backend systems across retail, fintech and media/live streaming. Tech lead and principal engineer: sets architecture and standards, mentors engineers. Works AI-first with Claude Code and GitHub Copilot in daily production delivery. Pursuing a Master's in Artificial Intelligence at UDESA.
 
