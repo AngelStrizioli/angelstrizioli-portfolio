@@ -55,14 +55,16 @@ An interactive career quest map: each company is a level, tap it to clear it and
 
 ## Analytics & referral tracking
 
-Vercel Web Analytics is enabled (script injected by `build.mjs` into every page). To see where visitors come from, check **Vercel dashboard → Analytics → Referrers**.
+Vercel Web Analytics is enabled (script injected by `build.mjs` into every page). Check it at **Vercel dashboard → Analytics**.
 
-Organic referrers (LinkedIn, Google, GitHub...) are detected automatically. For links you share yourself, tag them with `?ref=<source>`; Vercel reports the `ref` value as the referrer, so it shows up even when the origin hides the real referrer (PDFs, emails, WhatsApp, recruiter messages):
+Organic referrers (LinkedIn, Google, GitHub...) show up in the **Referrers** panel. Links you share yourself often arrive with no referrer (PDFs, email, WhatsApp, recruiter messages), so tag them with a dedicated path, `/r/<source>`. It serves the normal home page (rewrite in `vercel.json`, `noindex` via robots.txt) and each source gets its own row in the **Pages** panel. Query strings such as `?ref=` are not kept as a dimension on the Hobby plan, which is why paths are used instead.
 
 | Where you share it | Link |
 | --- | --- |
-| LinkedIn profile / posts | `https://angelstrizioli-portfolio.vercel.app/?ref=linkedin` |
-| GitHub profile README | `https://angelstrizioli-portfolio.vercel.app/?ref=github` |
-| CV PDF / résumé | `https://angelstrizioli-portfolio.vercel.app/?ref=cv-pdf` |
-| Email signature | `https://angelstrizioli-portfolio.vercel.app/?ref=email` |
-| A specific application | `https://angelstrizioli-portfolio.vercel.app/?ref=apply-<company>` |
+| LinkedIn profile / posts | `https://angelstrizioli-portfolio.vercel.app/r/linkedin` |
+| GitHub profile README | `https://angelstrizioli-portfolio.vercel.app/r/github` |
+| CV PDF / résumé | `https://angelstrizioli-portfolio.vercel.app/r/cv-pdf` |
+| Email signature | `https://angelstrizioli-portfolio.vercel.app/r/email` |
+| A specific application | `https://angelstrizioli-portfolio.vercel.app/r/apply-<company>` |
+
+Spanish and Portuguese versions: `/es/r/<source>` and `/pt/r/<source>`. Any `<source>` value works; no config needed.

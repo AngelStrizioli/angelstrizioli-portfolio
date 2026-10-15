@@ -26,6 +26,11 @@
       ]
     }
   ],
+  "rewrites": [
+    { "source": "/r/:src", "destination": "/index.html" },
+    { "source": "/es/r/:src", "destination": "/es/index.html" },
+    { "source": "/pt/r/:src", "destination": "/pt/index.html" }
+  ],
   "redirects": [
     {
       "source": "/cv",

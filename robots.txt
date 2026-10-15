@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /r/
+Disallow: /es/r/
+Disallow: /pt/r/
 
 Sitemap: https://angelstrizioli-portfolio.vercel.app/sitemap.xml

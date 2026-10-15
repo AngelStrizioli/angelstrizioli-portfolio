@@ -249,7 +249,7 @@ writeFileSync(
     )
     .join("\n")}\n</urlset>\n`
 );
-writeFileSync("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
+writeFileSync("robots.txt", `User-agent: *\nAllow: /\nDisallow: /r/\nDisallow: /es/r/\nDisallow: /pt/r/\n\nSitemap: ${site.url}/sitemap.xml\n`);
 writeFileSync(
   "llms.txt",
   `# ${site.name}\n\n> ${en.site.title}. ${en.site.summary}\n\n## Pages\n${locales
