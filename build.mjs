@@ -80,6 +80,8 @@ ${alternates(pathFn)}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e1116'/%3E%3Ctext x='16' y='22' font-size='17' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2339ff9c'%3EAS%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">${JSON.stringify(jsonLd(L))}</script>
 <style>${css}</style>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>`;
 
 const langNav = (L, pathFn) =>

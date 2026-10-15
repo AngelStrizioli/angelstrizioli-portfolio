@@ -52,3 +52,17 @@ An interactive career quest map: each company is a level, tap it to clear it and
 - **UDESA:** Master's in Artificial Intelligence (in progress)
 - **UADE:** Informatics Engineering (2017 – 2023)
 - Spanish (native) · English (advanced, C1) · Italian (intermediate) · Portuguese, German (basic)
+
+## Analytics & referral tracking
+
+Vercel Web Analytics is enabled (script injected by `build.mjs` into every page). To see where visitors come from, check **Vercel dashboard → Analytics → Referrers**.
+
+Organic referrers (LinkedIn, Google, GitHub...) are detected automatically. For links you share yourself, tag them with `?ref=<source>`; Vercel reports the `ref` value as the referrer, so it shows up even when the origin hides the real referrer (PDFs, emails, WhatsApp, recruiter messages):
+
+| Where you share it | Link |
+| --- | --- |
+| LinkedIn profile / posts | `https://angelstrizioli-portfolio.vercel.app/?ref=linkedin` |
+| GitHub profile README | `https://angelstrizioli-portfolio.vercel.app/?ref=github` |
+| CV PDF / résumé | `https://angelstrizioli-portfolio.vercel.app/?ref=cv-pdf` |
+| Email signature | `https://angelstrizioli-portfolio.vercel.app/?ref=email` |
+| A specific application | `https://angelstrizioli-portfolio.vercel.app/?ref=apply-<company>` |
